@@ -1,19 +1,19 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "description": "placeHolder of all the sample nodejs",
+  "description": "",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5",
+    "npm": "^2.14.12",
+    "pug": "^2.0.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://nitishbhushan2013@github.com/nitishbhushan2013/nodejs.git"
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js"
   },
   "author": "Nitish Bhushan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nitishbhushan2013/nodejs/issues"
-  },
-  "homepage": "https://github.com/nitishbhushan2013/nodejs#readme"
+  "license": "ISC"
 }
