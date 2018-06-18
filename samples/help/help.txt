@@ -1,0 +1,30 @@
+MongoLab detail for cloud based instance 
+
+mongodb://nitish:nitish123@ds163630.mlab.com:63630/nodesamples
+
+
+
+problem 
+========
+When after installing package, you woule not be bale to use the module 
+    Error: Cannot find module 'mongoose'
+
+Soluition
+--------------
+You can do either of two things to make it run :-
+
+1) Install mongoose globally with below steps :-
+
+a)npm install mongoose -g 
+
+b) Go to your app directory, where bot.js is located and then run
+
+npm link mongoose 
+
+Explanation :- When you install a package globally via npm, it is downloaded to global node_module folder. For me(Mac user), it's under /usr/local/lib/node_modules/mongoose. We link this to that directory from where you are trying to run module.js.
+
+2) Another approach is to install mongoose locally, not globally via
+
+npm install mongoose 
+
+
