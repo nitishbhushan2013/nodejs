@@ -1,0 +1,39 @@
+
+/*
+In the Node.js module system, each file is treated as a separate module. 
+module.exports is the object that's actually returned as the result of a require call.
+
+
+
+
+When dividing your program code over multiple files, module.exports is used to publish variables and functions to the consumer of a module. The require() call in your source file is replaced with corresponding module.exports loaded from the module.
+
+Remember when writing modules
+
+Module loads are cached, only initial call evaluates JavaScript.
+It's possible to use local variables and functions inside a module, not everything needs to be exported.
+The module.exports object is also available as exports shorthand. But when returning a sole function, always use module.exports.
+
+Condition:
+if you overwrite exports then it will no longer refer to module.exports. So if you wish to assign a new object (or a function reference) to exports then you should also assign that new object to module.exports
+
+exports is just the reference of module.exports
+
+exports = module.exports = fucntion_module = () =>{
+    //....
+}
+- Setting module.exports allows the fucntion_module function to be called like a function when required. Simply setting exports wouldn't allow the function to be exported because node exports the object module.exports references. 
+- They set both module.exports and exports to ensure exports isn't referencing the prior exported object. By setting both you use exports as a shorthand and avoid potential bugs later on down the road.
+
+Using exports.prop = true instead of module.exports.prop = true saves characters and avoids confusion.
+
+
+BAD EXAMPLE
+exports = 'william';
+
+exports = function(){
+     //...
+}
+
+
+*/
