@@ -1,0 +1,13 @@
+/*
+Notebook project details 
+
+Provides a mechanism for the user to use command line facility to 
+- add note by title and subject
+- delete note by title 
+- read note by title
+- list notes by title 
+
+
+
+
+*/
