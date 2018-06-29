@@ -35,5 +35,27 @@ exports = function(){
      //...
 }
 
+----------------------------------------------------------------------------------
+const _ = require("lodash.js")
+
+// Node module seaerching mechanism :
+    - Node first look into core module for this file 
+    - If not found, then it then recursively look into node_modules for the file
+
+
+Before srarting the project 
+- create a top layer folder and run 'npm init'
+    -- this will create package.json. Thsi file holds all the package dependencies details
+npm install
+- we can use it to export any third party library or module into our application
+- it download the file into node_modules folder 
+
+exm: 
+npm install lodash --save 
+// --save command would save the file version details into package.json. 
+
+After getting the project from the GITHUB
+- run npm install 
+    -- This will read package.json and download all the dependent modules into node_modules
 
 */
