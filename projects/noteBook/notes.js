@@ -2,8 +2,8 @@ const fs = require("fs");
 const _ = require("lodash");
 
 var noteObj = {
-    title : "",
-    subject : ""
+    title,
+    subject
 }
 
 //create a json file to store the content. 
