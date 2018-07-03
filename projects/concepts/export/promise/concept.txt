@@ -1,0 +1,30 @@
+Promise template 
+
+// define promise 
+
+    asyncFunc = () => {
+        return new Promise((resolve, reject)=>{
+            // perform business logic
+            resolve(data) 
+            . .. .
+            .. 
+            reject(error)
+        })
+    }
+
+// call function 
+// first flavour
+asyncFunc.then((data)=>{
+
+}, (error)=>{
+
+})
+
+
+// second flavour
+asyncFunc.then((data)=>{
+
+}).catch((error)=>{
+
+})
+
