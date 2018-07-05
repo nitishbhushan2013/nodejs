@@ -1,0 +1,2 @@
+to allow nodemon to keep running 'npm test' when there is chjange in source file . 
+- execute command in this fashion - nodemon --exxec "npm test"
