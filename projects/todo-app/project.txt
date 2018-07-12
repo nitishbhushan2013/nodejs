@@ -1,0 +1,20 @@
+Todo-app :- Todo is the node based Task management app build on top of Node js and Mongo Db. 
+It provides REST APi to provides various task management capabilities like 
+    - create new task
+    - view all task 
+    - Update the task
+    - delete the task
+
+It is using below NPM packages
+ - Express.js
+ - body-parser.js
+ - nodemon.js 
+
+ - mongodg.js   
+ - mongoose.js
+
+- supertest.js
+ - mocha.js
+ - chai.js
+ - expect.js
+     
